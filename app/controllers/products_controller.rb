@@ -21,6 +21,7 @@ class ProductsController < ApplicationController
       redirect_to products_url
     else
       render :new
+    end
   end
 
   def update
@@ -30,6 +31,7 @@ class ProductsController < ApplicationController
     else
       render :edit
     end
+  end
 
   def destroy
     @product = Product.find(params[:id])
